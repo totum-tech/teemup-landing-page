@@ -9,7 +9,7 @@ class LandingPage extends Component {
         <div className="landing-header">
           <h1>Totum</h1>
         </div>
-        <div className="landing-image">
+        <div className="landing-image-wrapper">
           <img src={require('./mapImage.jpg')} />
         </div>
         <p className="landing-intro">

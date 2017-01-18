@@ -1,8 +1,8 @@
 .App {
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: center;;
 }
 
 .landing-page {
@@ -14,12 +14,21 @@
 .landing-header {
   color: #000;
   font-family: 'Quicksand', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
+}
+
+.landing-image-wrapper {
+  height: 200px;
+}
+
+.landing-image-wrapper > img {
+  height: 100%;
+  width: auto;
 }
 
 .landing-intro {
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .email-field {
@@ -30,6 +39,7 @@
 .email-field > input {
   font-size: 15px;
   transition: font-size .3s;
+  width: 300px;
 }
 
 .email-field:hover > input {
@@ -38,17 +48,17 @@
 
 .email-field > .landing-button > i {
   color: #FFFFFF;
-  font-size: 10px;
+  font-size: 20px;
   transition: font-size .3s;
 }
 
 .email-field:hover > .landing-button > i {
-  font-size: 15px;
+  font-size: 25px;
   transition: font-size .3s;
 }
 
 .email-field > button {
-  margin-left: 5px;
+  margin-left: -50px;
 }
 
 .landing-button {
