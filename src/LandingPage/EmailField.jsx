@@ -10,7 +10,9 @@ const EmailField = ({ placeholder }) => {
         placeholder={placeholder}
         type="text"
       />
-      <button className="landing-button" />
+      <button className="landing-button">
+        <i className="fa fa-chevron-right" />
+      </button>
     </div>
   );
 }

@@ -13,7 +13,7 @@ class LandingPage extends Component {
           <img src={require('./mapImage.jpg')} />
         </div>
         <p className="landing-intro">
-          We make it easy to get together with <br /> the people you care about most.
+          The fastest way to get together <br /> with the people you care about.
         </p>
         <p>
           STAY INFORMED
