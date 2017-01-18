@@ -26,10 +26,6 @@
   font-size: 25px;
 }
 
-.landing-intro1 {
-  font-size: 15px;
-}
-
 .email-field {
   display: flex;
   justify-content: center;
@@ -67,15 +63,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .landing-image {
-    height: 200px;
-    width: auto;
-  }
-
-  .landing-image1 {
-    height: 100%;
-  }
-
   .landing-intro {
     font-size: 20px;
   }

@@ -10,12 +10,12 @@ class LandingPage extends Component {
           <h1>Totum</h1>
         </div>
         <div className="landing-image">
-          <img  src={require('./mapImage.jpg')} />
+          <img src={require('./mapImage.jpg')} />
         </div>
         <p className="landing-intro">
           We make it easy to get together with <br /> the people you care about most.
         </p>
-        <p className="landing-intro1">
+        <p>
           STAY INFORMED
         </p>
         <EmailInput placeholder="email@address.com" />
