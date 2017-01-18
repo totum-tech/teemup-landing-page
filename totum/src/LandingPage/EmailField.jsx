@@ -2,17 +2,15 @@ import React from 'react';
 
 import './../App.css';
 
-const EmailField = ({className, placeholder}) => {
+const EmailField = ({ placeholder }) => {
   return (
-    <div>
-      <input 
-        className={className}
+    <div className="email-field">
+      <input
+        className="form-field"
         placeholder={placeholder}
-        type="text" 
+        type="text"
       />
-      <button 
-        className={"landing-button"}
-      />
+      <button className="landing-button" />
     </div>
   );
 }
