@@ -1,0 +1,5 @@
+deployment:
+  production:
+    branch: master
+    commands:
+      - aws s3 sync build/ s3://aws-website-totum-kpl3n.s3-website-us-east-1.amazonaws.com
