@@ -13,4 +13,4 @@ deployment:
     branch: /^(?!master|candidates\/.*).*$/
     commands:
       - npm run build
-      - aws s3 sync build/ s3://aws-website-totum-kpl3n.s3-website-us-east-1.amazonaws.com
+      - aws s3 sync build/ s3://aws-website-totum-staging-wkpb2.s3-website-us-east-1.amazonaws.com
