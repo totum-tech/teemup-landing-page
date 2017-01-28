@@ -10,7 +10,7 @@ deployment:
       - npm run build
       - aws s3 sync build/ s3://aws-website-totum-kpl3n
   staging:
-    branch: /^(?!master|candidates\/.*).*$/
+    branch: /^(?!master\/.*).*$/
     commands:
       - npm run build
       - aws s3 sync build/ s3://aws-website-totum-staging-wkpb2
