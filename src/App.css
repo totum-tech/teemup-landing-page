@@ -1,0 +1,87 @@
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;;
+}
+
+.landing-page {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+
+.landing-header {
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 35px;
+}
+
+.landing-image-wrapper {
+  height: 200px;
+}
+
+.landing-image-wrapper > img {
+  height: 100%;
+  width: auto;
+}
+
+.landing-intro {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+
+.email-field {
+  display: flex;
+  justify-content: center;
+}
+
+.email-field > input {
+  font-size: 15px;
+  transition: font-size .3s;
+  width: 300px;
+}
+
+.email-field:hover > input {
+  font-size: 17px;
+}
+
+.email-field > .landing-button > i {
+  color: #FFFFFF;
+  font-size: 20px;
+  transition: font-size .3s;
+}
+
+.email-field:hover > .landing-button > i {
+  font-size: 25px;
+  transition: font-size .3s;
+}
+
+.email-field > button {
+  margin-left: -50px;
+}
+
+.landing-button {
+  background-color: #353535;
+  border: none;
+  border-radius: 4px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-field {
+  border: 2px solid #353535;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 0px 10px 10px;
+  outline: none;
+  width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-intro {
+    font-size: 20px;
+  }
+}
