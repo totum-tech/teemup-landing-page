@@ -62,6 +62,57 @@ const secondaryContentRenderer = () => {
   )
 }
 
+const aboutUsContentRenderer = () => {
+  return (
+    <div style={{display: 'flex', flexDirection: 'column'}}>
+    <div style={{display: 'flex', justifyContent: 'space-around', marginTop: '40px'}}>
+      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+
+        <div style={{display: 'flex', alignItems: 'center', width: '300px'}}>
+          <div style={{backgroundColor: '#212121', height: '180px', width: '180px', borderRadius: '50px'}}>&nbsp;</div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
+            <span>
+              Tagline about project goes here.
+            </span>
+          </div>
+        </div>
+
+        <div style={{display: 'flex', alignItems: 'center', width: '300px'}}>
+          <div style={{backgroundColor: '#212121', height: '180px', width: '180px', borderRadius: '50px'}}>&nbsp;</div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
+            <span>
+              Tagline about project goes here.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style={{display: 'flex', justifyContent: 'space-around', marginTop: '40px'}}>
+      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+
+        <div style={{display: 'flex', alignItems: 'center', width: '300px'}}>
+          <div style={{backgroundColor: '#212121', height: '180px', width: '180px', borderRadius: '50px'}}>&nbsp;</div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
+            <span>
+              Tagline about project goes here.
+            </span>
+          </div>
+        </div>
+
+        <div style={{display: 'flex', alignItems: 'center', width: '300px'}}>
+          <div style={{backgroundColor: '#212121', height: '180px', width: '180px', borderRadius: '50px'}}>&nbsp;</div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
+            <span>
+              Tagline about project goes here.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  )
+}
+
 class LandingPage extends Component {
   render() {
     return (
@@ -88,56 +139,7 @@ class LandingPage extends Component {
         />
         <Section 
           headerTitle={'ABOUT US'}
-          contentRenderer={() => {
-            return (
-              <div style={{display: 'flex', flexDirection: 'column'}}>
-              <div style={{display: 'flex', justifyContent: 'space-around', marginTop: '40px'}}>
-                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-
-                  <div style={{display: 'flex', alignItems: 'center', width: '300px'}}>
-                    <div style={{backgroundColor: '#212121', height: '180px', width: '180px', borderRadius: '50px'}}>&nbsp;</div>
-                    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
-                      <span>
-                        Tagline about project goes here.
-                      </span>
-                    </div>
-                  </div>
-
-                  <div style={{display: 'flex', alignItems: 'center', width: '300px'}}>
-                    <div style={{backgroundColor: '#212121', height: '180px', width: '180px', borderRadius: '50px'}}>&nbsp;</div>
-                    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
-                      <span>
-                        Tagline about project goes here.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style={{display: 'flex', justifyContent: 'space-around', marginTop: '40px'}}>
-                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-
-                  <div style={{display: 'flex', alignItems: 'center', width: '300px'}}>
-                    <div style={{backgroundColor: '#212121', height: '180px', width: '180px', borderRadius: '50px'}}>&nbsp;</div>
-                    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
-                      <span>
-                        Tagline about project goes here.
-                      </span>
-                    </div>
-                  </div>
-
-                  <div style={{display: 'flex', alignItems: 'center', width: '300px'}}>
-                    <div style={{backgroundColor: '#212121', height: '180px', width: '180px', borderRadius: '50px'}}>&nbsp;</div>
-                    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
-                      <span>
-                        Tagline about project goes here.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
-            )
-          }}
+          contentRenderer={aboutUsContentRenderer}
         />
       </div>
     );
