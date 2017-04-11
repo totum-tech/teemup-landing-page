@@ -1,24 +1,32 @@
 import React, { Component } from 'react';
 
-import EmailInput from './EmailField';
+import Section from './Section';
 
 class LandingPage extends Component {
   render() {
     return (
       <div className="landing-page">
-        <div className="landing-header">
-          <h1>Totum</h1>
-        </div>
-        <div className="landing-image-wrapper">
-          <img alt="our world" src={require('./mapImage.jpg')} />
-        </div>
-        <p className="landing-intro">
-          The fastest way to get together <br /> with the people you care about.
-        </p>
-        <p>
-          STAY INFORMED
-        </p>
-        <EmailInput placeholder="email@address.com" />
+          <div className="landing-image-wrapper">
+            <img alt="teemup" src={require('./heroImage.png')} />
+          </div>
+          <p className="landing-intro">
+            With the click of a button, we connect you with another aspiring <br /> developer so that you can work through classes together.
+          </p>
+          <button className="landing-button">
+            DOWNLOAD
+          </button>
+          <p>
+            Learn More
+          </p>
+        <Section 
+          headerTitle={'MAIN FEATURE'}
+        />
+        <Section 
+          headerTitle={'SECONDARY FEATURES'}
+        />
+        <Section 
+          headerTitle={'ABOUT US'}
+        />
       </div>
     );
   }
