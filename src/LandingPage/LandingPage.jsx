@@ -1,29 +1,8 @@
 import React, { Component } from 'react';
-
+import MainContent from './MainContent';
+import SecondaryContent from './SecondaryContent';
+import TertiaryContent from './TertiaryContent';
 import Section from './Section';
-
-const mainContentRenderer = () => {
-  return (
-    <div style={{display: 'flex', justifyContent: 'space-around', marginTop: '40px'}}>
-      <div style={{backgroundColor: '#212121', height: '250px', width: '400px', marginRight: '80px'}}>&nbsp;</div>
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
-        <span>
-          Tagline about project goes here.
-        </span>
-        <span>
-          Description about this feature here.
-        </span>
-        <br />
-        <span>
-          Description about this feature here.
-        </span>
-        <span>
-          Secondary tagline about project goes here.
-        </span>
-      </div>
-    </div>
-  )
-}
 
 const secondaryContentRenderer = () => {
   return (
@@ -129,15 +108,19 @@ class LandingPage extends Component {
           <p className="call-to-action">
             Learn More
           </p>
-        <Section 
-          headerTitle={'MAIN FEATURE'}
-          contentRenderer={mainContentRenderer}
-        />
-        <Section 
-          headerTitle={'SECONDARY FEATURES'}
-          contentRenderer={secondaryContentRenderer}
-        />
-        <Section 
+        <Section headerTitle={'GET CONNECTED'}>
+          <MainContent />
+        </Section>
+
+        <Section headerTitle={'TALK IT OVER'}>
+          <SecondaryContent />
+        </Section>
+
+        <Section headerTitle={'WORK IT OUT'}>
+          <TertiaryContent />
+        </Section>
+
+        <Section
           headerTitle={'ABOUT US'}
           contentRenderer={aboutUsContentRenderer}
         />

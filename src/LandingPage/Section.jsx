@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Section = ({ contentRenderer, headerTitle }) => {
+const Section = ({ contentRenderer, headerTitle, children }) => {
   return (
     <div className="section">
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '225px'}}>
@@ -9,6 +9,7 @@ const Section = ({ contentRenderer, headerTitle }) => {
         <div className="section-bar">&nbsp;</div>
       </div>
       {contentRenderer ? contentRenderer() : null}
+      {children}
     </div>
   );
 }
