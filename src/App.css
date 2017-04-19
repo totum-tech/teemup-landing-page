@@ -23,11 +23,13 @@
   flex-direction: column;
   display: flex;
   text-align: center;
-  margin-top: 125px;
+  margin-top: 100px;
+  width: 80%;
 }
 
 .landing-image-wrapper {
-  height: 125px;
+  height: 175px;
+  margin-bottom: 25px;
 }
 
 .landing-image-wrapper > img {
@@ -36,6 +38,7 @@
 }
 
 .landing-intro {
+  color: #686868;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   margin-top: 25px;
@@ -43,13 +46,15 @@
 
 .landing-button {
   background-color: #FFF;
-  border: 2px #212121 solid;
+  border: 1px #212121 solid;
+  border-radius: 2px;
   color: #000;
   cursor: pointer;
-  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   letter-spacing: 3px;
   outline: none;
-  width: 170px;
+  width: 150px;
   padding-top: 5px;
   padding-bottom: 5px;
   align-self: center;
@@ -57,24 +62,35 @@
 }
 
 .landing-button:hover {
-  background-color: #212121;
+  border: 1px #76FFBA solid;
+  background-color: #76FFBA;
   color: #FFF;
-  transition: 0.4s ease
+  transition: 0.2s ease
 }
 
 .call-to-action {
+  font-family: 'Open Sans', sans-serif;
   margin-top: 50px;
 }
 
 .section {
   font-family: 'Open Sans', sans-serif;
+  margin-top: 200px;
+  width: 80%;
 }
 
 .section-bar {
   background-color: #212121;
   height: 2px;
-  width: 50px;
+  width: 100px;
+  margin-bottom: 20px;
 }
+
+/*.section > h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding: 0px 5px 0px 5px;
+}*/
 
 /* FOOTER */
 .footer {
