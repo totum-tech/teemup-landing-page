@@ -4,43 +4,6 @@ import SecondaryContent from './SecondaryContent';
 import TertiaryContent from './TertiaryContent';
 import Section from './Section';
 
-const secondaryContentRenderer = () => {
-  return (
-    <div style={{display: 'flex', justifyContent: 'space-around', marginTop: '40px'}}>
-      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: '300px'}}>
-          <div style={{backgroundColor: '#212121', height: '150px', width: '180px'}}>&nbsp;</div>
-          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
-            <span>
-              Tagline about project goes here.
-            </span>
-          </div>
-        </div>
-
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: '300px'}}>
-          <div style={{backgroundColor: '#212121', height: '150px', width: '180px'}}>&nbsp;</div>
-          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
-            <span>
-              Tagline about project goes here.
-            </span>
-          </div>
-        </div>
-
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: '300px'}}>
-          <div style={{backgroundColor: '#212121', height: '150px', width: '180px'}}>&nbsp;</div>
-          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
-            <span>
-              Tagline about project goes here.
-            </span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  )
-}
-
 const aboutUsContentRenderer = () => {
   return (
     <div style={{display: 'flex', flexDirection: 'column'}}>
